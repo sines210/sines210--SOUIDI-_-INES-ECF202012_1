@@ -121,7 +121,7 @@ La convention camelCase est privilégiée pour nommer les images et fichiers SAS
 
 
 	9° Utilisation de SASS
-J'ai utilisé SASS pour coder ma feuille de style car cela offre de mon point de vue une meilleure organnisation de mon travail et une plus de faciliter pour travailler dans le code, surtout quand il y a beaucoup de lignes et de pages. SASS est installé en début de projet gavec NPM et relié à la feuille de style avec un package JSON.
+J'ai utilisé SASS pour coder ma feuille de style car cela permet une meilleure organnisation du travail et une plus de facilité pour travailler dans le code, surtout quand il y a beaucoup de lignes et de pages. SASS est installé en début de projet avec NPM et relié à la feuille de style avec un package JSON.
 
 
 
