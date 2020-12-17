@@ -106,7 +106,7 @@ J'ai resizer toutes les images pour que leurs tailles correspondent au mieux à 
    
    
      
-			7° W3C
+	7° W3C
    
    HTML => 1 erreur  concernant mes encarts de concert car le titre en h3 est encapsulé d'une liste ul ce qui n'est pas dans la bonne pratique de la sémantique. Toutefois le fait de coder le titre de cette manière offre un alignement plus optimale.
    
@@ -114,17 +114,17 @@ J'ai resizer toutes les images pour que leurs tailles correspondent au mieux à 
 
 
 
-			8° Convention de nommage
+	8° Convention de nommage
       
 La convention camelCase est privilégiée pour nommer les images et fichiers SASS, le PascalCase pour les différentes pages HTML ce qui permet une meilleure visibilité dans l'arborescence des fichiers sur l'éditeur de code. 
 
 
 
-			9° Utilisation de SASS
+	9° Utilisation de SASS
 J'ai utilisé SASS pour coder ma feuille de style car cela offre de mon point de vue une meilleure organnisation de mon travail et une plus de faciliter pour travailler dans le code, surtout quand il y a beaucoup de lignes et de pages. SASS est installé en début de projet gavec NPM et relié à la feuille de style avec un package JSON.
 
 
 
-			10° Adaptabilité du contenu format  descktop, mobile et tablette RESPONSIVE
+	10° Adaptabilité du contenu format  descktop, mobile et tablette RESPONSIVE
         
 Le design du site est responsive
