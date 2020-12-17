@@ -1,0 +1,98 @@
+  //Modele découpage flex avec le flex défini en layout sur les articles découpage de l'écran en 5 éléments en format desktop et 6 éléments en format tablette et mobile ajustement de la disposition des éléments avec flex wrap (le flow ne sera pas cassé et ira à la ligne si les éléments sont trop grands pour leur container) éléments positionnés en relative (non fix relatifs à leur container), ils occupent 100% de l'espace qui leur a été attribué dans le découpage avec 1% de marge sur les hauteurs
+ 
+  .article-cards, .article-icons, #article-concerts, .article-form
+  { display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+    .c-desk1,.c-desk2, .c-desk3, .c-desk4, .c-desk5, .c-desk6, .c-mob1, .c-mob2, .c-mob3, .c-mob4, .c-mob5, .c-mob6, .c-tab1, .c-tab2, .c-tab3, .c-tab4, .c-tab5, .c-tab6
+    {position: relative;
+        z-index: 5;
+      width: 100%;
+      margin: 1% 0;
+ }
+        
+
+.c-desk1
+{-ms-flex: 1 2 20%;
+  flex: 0 0 20%;
+  max-width:20%;
+}
+  .c-desk2
+{-ms-flex: 1 2 40%;
+  flex: 1 2 40%;
+  max-width: 40%;}
+  .c-desk3
+{-ms-flex: 1 2 60%;
+  flex: 1 2 60%;
+  max-width: 60%;}
+  .c-desk4
+{-ms-flex: 1 2 80%;
+  flex: 1 2 80%;
+  max-width: 80%;}
+  .c-desk5
+{-ms-flex: 1 2 100%;
+  flex: 1 2 100%;
+  max-width: 100%;}
+ 
+      
+      @media screen and (max-width: 1028px)
+      {
+        .c-tab1
+        {-ms-flex: 0 0 16.6666666667%;
+          flex: 0 0 16.6666666667%;
+          max-width: 16.6666666667%;}
+          .c-tab2
+        {-ms-flex: 0 0 33.3333333334%;
+          flex: 0 0 33.3333333334%;
+          max-width: 33.3333333334%;}
+          .c-tab3
+        {-ms-flex: 0 0 50.0000000001%;
+          flex: 0 0 50.0000000001%;
+          max-width: 50.0000000001%;}
+          .c-tab4
+        {-ms-flex: 0 0 66.6666666668%;
+          flex: 0 0 66.6666666668%;
+          max-width: 66.6666666668%;}
+          .c-tab5
+        {-ms-flex: 0 0 83.3333333335%;
+          flex: 0 0 83.3333333335%;
+          max-width: 83.3333333335%;}
+          .c-tab6
+        {-ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%;}
+      }
+      @media screen and (max-width:576px)
+      {  
+        .c-mob1
+        {-ms-flex: 0 0 16.6666666667%;
+          flex: 0 0 16.6666666667%;
+          max-width: 16.6666666667%;        
+        }
+          .c-mob2
+        {-ms-flex: 0 0 33.3333333334%;
+          flex: 0 0 33.3333333334%;
+          max-width: 33.3333333334%;}
+          .c-mob3
+        {-ms-flex: 0 0 50.0000000001%;
+          flex: 0 0 50.0000000001%;
+          max-width: 50.0000000001%;}
+          .c-mob4
+        {-ms-flex: 0 0 66.6666666668%;
+          flex: 0 0 66.6666666668%;
+          max-width: 66.6666666668%;}
+          .c-mob5
+        {-ms-flex: 0 0 83.3333333335%;
+          flex: 0 0 83.3333333335%;
+          max-width: 83.3333333335%;}
+          .c-mob6
+        {-ms-flex: 1 2 100%;
+          flex: 1 2 100%;
+          max-width: 100%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+      }

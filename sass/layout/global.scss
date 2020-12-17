@@ -1,0 +1,77 @@
+
+//Propriétés globales 
+
+//Ici la font-size de l'élément racine HTML est défini à 10px ce qui permet par la suite de définir toutes les font-size en rem ( le rem étant en proportion de l'élément racine : 1rem = font size racine; le font-size par défaut de la racine est de 16px, le fait de redéfinir cette font-size à la racine à 10px permettra une facilité de calcul par la suite (si on veut du 13px on définira 1.3rem))
+html {
+    font-size: 10px;
+  }
+  
+  //Propriété qui seront définies par défaut sur tout le HTML le main faisant toute la longueur du body (on a défini un main afin d'éviter de toucher au body et d'éviter des problèmes structurels qui pourraient arriver par la suite)
+  //On attribue des marges intérieures et extérieures à 0 (ce qui permet par exemple d'avoir des articles qui se succèdent avec des couleurs différentes sans coupures) on attribue un border-box qui sera utile lors de la construction des layouts pour bien situer les éléments et une font-family qui est une police google (il y a un lien vers les fonts de google dans le head du HTML)
+  //la couleur whitesmoke est plus douce que du blanc trop lumineux sur les écrans et permet de coller avec la tendance actuelle des couleurs de fond en blanc
+
+  main {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  //filtre de luminosité pour un effet plus soft
+  .div-global {
+    filter: brightness(0.8); 
+  }
+
+  //couleur des liens nav et des icones soptify et deezer sur l'arriere des cartes avec une opacité à 0.8, un font-size 2fois plus grands pour la largeur des icones et un effet de transition au passage de la souris où on repasse à une opacité à 1 ce qui permet d'avoir des liens en surbrillance quand on les survole avec la souris
+  i
+  {font-size: 2rem;}
+  .lien, i
+  {opacity: 0.8;
+    transition: transform 0.3s linear;}
+    .lien:hover
+    {  opacity: 1; }
+   
+i:hover
+{ transform: scale(1.45);
+opacity: 1; }
+  
+    // Effet de transition des liens vers les plateformes musicales situés en bas des pages et du bouton lien vers la page artistes . Transition au passage de la souris ou les éléments vont bouger vers le haut (on travaille sur l'axe des ordonnées Y)
+    .butt
+    {color: white;
+      transition: transform 1s ease-in-out;}
+
+    .butt:hover
+    {transform: translateY(-3vh);}
+
+
+    // Titre recherche récente de la page d'accueil codé comme un article à part entière ce qui permet d'avoir un soulignement sur toute la page avec le border bottom de ne pas se soucier d'attribuer une longueur à la ligne de soulignement et donc de ne pas se soucier de sa redéfinition au changement de format d'écran
+
+  #article-recents
+  {
+    border-bottom: 1px solid black;
+    // background: -webkit-gradient(linear, left top, right bottom, from(rgb(158, 16, 23)), to(#610000));
+    padding-top: 5%;
+}
+.recents-title
+{font-weight: bolder;
+  margin: 0 0 0 1%;
+font-size: 1.7rem;
+}
+
+
+
+@media screen and (max-width: 1028px)
+{
+  //opacité à 1 pour les format mobile et tablette car pas de survol de la souris 
+  .lien, i
+  {opacity: 1;}
+  
+}
+
+
+
+
+
+
+

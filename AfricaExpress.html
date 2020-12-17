@@ -1,0 +1,113 @@
+<!Doctype html>
+<html lang="Fr">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="description" content="Page Africa Express - MyMusic - le blog musical qui recensent les artistes favoris de l'utilisateur ainsi que des clips, biographies et dates de concert ">
+    <meta name="robots" content="nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.1, viewport-fit=cover">
+   
+ 
+    <!-- lien google-fonts pour ma font-family -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <title> Africa Express -  MyMusic - Le blog de votre musique </title>
+
+  <!-- Essai de respecter au max les bonnes pratiques dans le header avec indication de la langue, encodage en utf-8, balise meta description qui sera le snippet, la description du site qui apparaitra sous son nom lorsque l'on recherchera le site dans un moteur de recherche. La balise meta robots no follow permettra une meilleure optimisation du site puisque les liens ne seront pas tous à jour au moment du livrable. Ainsi les robots d'indexation auront pour instruction de ne pas suivre les liens et ainsi on évitera un mauvais référencement du fait de la non fonctionnalité de certains liens. La balise viewPort aide est là pour aider au responsive puisqu'elle indique que les proportions de l'écran de base doivent rester les mêmes entre le format destop et le format mobile -->
+</head>
+
+<body>
+    <main>
+        <div class="div-global">  
+           <header>
+   
+                <nav class="nav">
+                    <div id="head-name"><a href="index.html" class="lien">	&#127911;MY MUSIC&#xAE;</a></div>
+                    <input type="search" class="searchBar" placeholder="&#8981; search"/>
+                    <div id="menu-burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                        <ul class="head-nav">
+                            <li>  <a href="index.html" class="lien">Accueil</a></li>
+                            <li>  <a href="artistes.html" class="lien">Artistes</a></li>
+                            <li>  <a href="contact.html" class="lien">Contact</a></li>
+                    </ul>
+                </nav>   
+            </header>
+            <article class="article-artist africa">
+            
+                <div class="contain">
+                  <img class="carte-artist ca1 car13" alt="photo Africa Express" src="...">
+                    <img class="carte-artist ca2 car14" alt="photo Africa Express" src="...">
+                    
+               </div> 
+               <div class="biographie">
+                Africa Express is a UK-based non-profit organization that facilitates cross-cultural collaborations between musicians in African, Middle Eastern, and Western countries. It seeks to help African musicians break beyond the stigmas and prejudices of the term 'world music', while presenting a positive impression of Africa to counter against common media images of war, famine, and disease. Notable events that Africa Express has been involved in include performances at the 2012 Olympics, the Glastonbury Festival, the BBC Electric Proms, Denmark's Roskilde Festival, a tour of Syrian refugee musicians, and concerts in such places as Mali, the Congo, Ethiopia, Nigeria, South Africa, and France.
+
+                The organization has also released a number of compilations and collaborative albums along with a documentary of the 2012 Africa Express UK train tour. Many of the established Western musicians who have participated in the organization's projects have spoken of their admiration for the musical skill levels of the African musicians involved and the influence their participation has had on them. Over 50,000 people are estimated to have attended Africa Express events, which have received substantial global media coverage.
+               </div>
+
+               <!-- Iframe youtube -->
+               <section class="clip">
+                <iframe class="youTube" width="360" height="165" src="https://www.youtube.com/embed/bEwPfg5eVnY"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       </section>
+        </article>
+        <article class="article-icons">
+            <section class="music-icon i1 c-desk1">
+              <a href="https://www.deezer.com/fr/" class="butt">  <img src="./img/deezer90.png" alt="logo deezer"></a>
+            </section>
+            <section class="music-icon i2 c-desk1">
+                <a href="https://www.spotify.com/fr/" class="butt"><img src="./img/spotify90.png" alt="logo Spotify"></a>
+            </section>
+            <section class="music-icon i3 c-desk1">
+              <a href="https://musicbrainz.org/" class="butt"> <img src="./img/musicBrainz50.png" alt="logo musicBrainz"></a> 
+            </section>
+            <section class="music-icon i4 c-desk1">
+                <a href="https://tunein.com/" class="butt"><img src="./img/tuneIn60.png" alt="logo TuneIn"></a>
+            </section>
+        </article>
+
+            
+     
+        <footer>
+            <div class="c-desk2"></div>
+            <ul class="foot-nav c-desk2 ">
+                <li class="li-foot  ">  <a href="#" class="aF lien">A propos</a></li>
+                <li class="li-foot">  <a href="#" class="aF lien">Liens</a></li>
+                <li class="li-foot ">  <a href="#" class="aF lien">Partenaires</a></li>
+               
+            </ul>
+            <ul class="foot-nav1 c-desk2 "> 
+                <li class="li-foot ">  <a href="#" class="aF lien">Support</a></li>
+                <li class="li-foot">  <a href="#" class="aF lien">Contact</a></li>
+            </ul>
+        </footer>  
+    </div>
+</main>
+<script src="./assets/app.js"></script>
+<script src="./assets/appAfrica.js"></script>
+<script src="https://kit.fontawesome.com/6c17918ad5.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<!-- <script src="https://e-cdns-files.dzcdn.net/js/min/dz.js"></script> SCRIPT PROTOCOLE HTTPS -->
+<script src="https://cdns-files.dzcdn.net/js/min/dz.js"></script>
+
+
+<script>
+    //Scroll reveal
+scrollFunction()
+
+ScrollReveal().reveal('header');
+               
+                // ScrollReveal().reveal('#top-left', { delay: 500 });
+                
+                 ScrollReveal().reveal('.ca1', { delay: 1000 });
+                 ScrollReveal().reveal('.ca2', { delay: 1300 });
+                 ScrollReveal().reveal('.biographie', { delay: 1600 });
+                </script>
+
+
+</body>
+</html>

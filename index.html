@@ -1,0 +1,176 @@
+<!Doctype html>
+<html lang="Fr">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="description" content="MyMusic - le blog musical qui recensent les artistes favoris de l'utilisateur ainsi que des clips, biographies et dates de concert ">
+    <meta name="robots" content="nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.1, viewport-fit=cover">
+   
+ 
+    <!-- lien google-fonts pour ma font-family -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <title> MyMusic - Le blog de votre musique </title>
+
+  <!-- Essai de respecter au max les bonnes pratiques dans le header avec indication de la langue, encodage en utf-8, balise meta description qui sera le snippet, la description du site qui apparaitra sous son nom lorsque l'on recherchera le site dans un moteur de recherche. La balise meta robots no follow permettra une meilleure optimisation du site puisque les liens ne seront pas tous à jour au moment du livrable. Ainsi les robots d'indexation auront pour instruction de ne pas suivre les liens et ainsi on évitera un mauvais référencement du fait de la non fonctionnalité de certains liens. La balise viewPort aide est là pour aider au responsive puisqu'elle indique que les proportions de l'écran de base doivent rester les mêmes entre le format descktop et le format mobile -->
+</head>
+
+
+<body>
+    <main>
+        <div class="div-global">  
+           <header>
+   
+                <nav class="nav">
+                    <div id="head-name"><a href="index.html" class="lien">	&#127911;MY MUSIC&#xAE;</a></div>
+                    <input type="search" class="searchBar" placeholder="&#8981; search"/>
+                    <div id="menu-burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                        <ul class="head-nav">
+                            <li>  <a href="index.html" class="lien">Accueil</a></li>
+                            <li>  <a href="artistes.html" class="lien">Artistes</a></li>
+                            <li>  <a href="contact.html" class="lien">Contact</a></li>
+                    </ul>
+                </nav>   
+            </header>
+
+        <article id="article-recents">
+        
+            <h2 class="recents-title">Recherches récentes</h2>
+        </article>
+        <article class="article-cards">
+            
+            <section class="section-card c-desk1 c-mob6 c-tab2  ">
+                <div class="card">
+                    <div class=" card1 front">  <img src="./img/waxTailor.jpg" class="sc" alt="Wax Tailor"> </div>
+                    <h4> <a href="WaxTailor.html" class="artist-name lien">Wax Tailor</a></h4>
+                  <div class="back">
+                      <a href="LienDeezer.html" class="lien">  <i class="fab fa-deezer"></i></a>
+                    <a href="https://www.spotify.com/fr/" class="lien"> <i class="fab fa-spotify"></i></a></div></div>
+               </section>
+               <section class="section-card sc2 c-mob6 c-tab2 c-desk1 ">
+                   <div class="card">
+                   <div class="card2 front"><img src="./img/gorillaz.jpg" class="sc" alt="gorillaz"></div>
+                   <h4> <a href="Gorillaz.html" class="artist-name lien">Gorillaz</a></h4>
+                    <div class="back">
+                        <a href="LienDeezer.html" class="lien">  <i class="fab fa-deezer"></i></a>
+                       <a href="https://www.spotify.com/fr/" class="lien"> <i class="fab fa-spotify"></i></a></div></div>
+               </section>
+                    <div class="square"></div>
+               <section class="section-card sc3 c-mob6 c-tab2 c-desk1 ">
+                   <div class="card">
+                   <div class="card3 front"><img src="./img/nenehCherry.jpg" class="sc" alt="neneh Cherry"></div>
+                   <h4> <a href="NenehCherry.html" class="artist-name lien">Neneh Cherry</a></h4>
+                   <div class="back">
+                       <a href="LienDeezer.html" class="lien">  <i class="fab fa-deezer"></i></a>
+                       <a href="https://www.spotify.com/fr/" class="lien"> <i class="fab fa-spotify"></i></a></div></div>
+               </section>
+               <section class="section-card sc4 c-mob6 c-tab2 c-desk1  ">
+                   <div class="card">
+                   <div class="card4 front"><img src="./img/redHot.jpg" class="sc" alt="Red hot chili peppers"></div>
+                   <h4> <a href="RedHot.html" class="artist-name lien">Red Hot Chili Peppers</a></h4>
+                   <div class="back">
+                       <a href="LienDeezer.html" class="lien">  <i class="fab fa-deezer"></i></a>
+                       <a href="https://www.spotify.com/fr/" class="lien"> <i class="fab fa-spotify"></i></a></div></div>
+               </section>
+               <section class="section-card sc5 c-mob6 c-tab2 c-desk1">
+                   <div class="card">
+                   <div class="card5 front"><img src="./img/metronomy.jpg" class="sc" alt="metronomy"></div>
+                   <h4> <a href="Metronomy.html" class="artist-name lien">Metronomy</a></h4>
+                   <div class="back">
+                       <a href="LienDeezer.html" class="lien">  <i class="fab fa-deezer"></i></a>
+                       <a href="https://www.spotify.com/fr/" class="lien"> <i class="fab fa-spotify"></i></a></div></div>
+              </section>
+            <section class="section-button sc6 c-desk6 c-tab6 c-mob6  ">
+                <!-- voir pb W3C qui ne veut pas de bouton encapsuler  de bouton ds un a, je pourrais le changer en div mais le style convient moins que le style du bouton // A voir-->
+                <a href="artistes.html" class="butt"><button class="biblio"> Voir les artistes de ma bibliothèque</button> </a>
+            </section>
+            
+        </article>
+
+        <article id="article-concerts">
+            
+          <div id="cont-c">
+            <div class="carte-concert cc1"></div>
+            
+                  <img alt="photo concert" src="..." class=" carte-concert cc3">
+            
+         </div> 
+         <!-- Ici problème avec la sémantique W3C qui ne permet pas d'encapsuler un h3 dans une liste ul, toutefois c'est la meilleure option que j'ai trouvé pour le moment pour avoir un alignement responsive optimale -->
+            <ul id="liste-concert">
+                <h3 class="titre-concert">Mes prochains concert</h3>
+                <li class="conc co1">Wax Taylor Le Mans 05/11/2021</li>
+                <li class="conc co2">Neneh Cherry Cascais (Portugal) 27/07/2021</li>
+                <li class="conc co3">Popof Millau 25/06/2021</li>
+            </ul>
+        </article>
+        <article class="article-icons">
+            <section class="music-icon i1 c-desk1">
+              <a href="https://www.deezer.com/fr/" class="butt">  <img src="./img/deezer90.png" alt="logo deezer"></a>
+            </section>
+            <section class="music-icon i2 c-desk1">
+                <a href="https://www.spotify.com/fr/" class="butt"><img src="./img/spotify90.png" alt="logo Spotify"></a>
+            </section>
+            <section class="music-icon i3 c-desk1">
+              <a href="https://musicbrainz.org/" class="butt" > <img src="./img/musicBrainz50.png" alt="logo musicBrainz"></a> 
+            </section>
+            <section class="music-icon i4 c-desk1">
+                <a href="https://tunein.com/" class="butt" ><img src="./img/tuneIn60.png" alt="logo TuneIn"></a>
+            </section>
+        </article>
+
+            
+     
+        <footer>
+            <ul class="foot-nav c-desk2 ">
+                <li class="li-foot">  <a href="#" class="aF lien">A propos</a></li>
+                <li class="li-foot">  <a href="#" class="aF lien">Liens</a></li>
+                <li class="li-foot ">  <a href="#" class="aF lien">Partenaires</a></li>
+               
+            </ul>
+            <ul class="foot-nav1 c-desk2 "> 
+                <li class="li-foot ">  <a href="#" class="aF lien">Support</a></li>
+                <li class="li-foot">  <a href="contact.html" class="aF lien">Contact</a></li>
+            </ul>
+        </footer>  
+    </div>
+</main>
+    <script src="./assets/app.js"></script>
+    <script src="./assets/appIndex.js"></script>
+    <script src="https://kit.fontawesome.com/6c17918ad5.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- <script src="https://e-cdns-files.dzcdn.net/js/min/dz.js"></script> SCRIPT PROTOCOLE HTTPS -->
+<script src="https://cdns-files.dzcdn.net/js/min/dz.js"></script>
+
+
+<script>
+    //Scroll reveal
+scrollFunction()
+
+ScrollReveal().reveal('header');
+               
+                
+                 ScrollReveal().reveal('.card1', { delay: 800 });
+                 ScrollReveal().reveal('.card2', { delay: 1000 });
+                 ScrollReveal().reveal('.card3', { delay: 1200 });
+                 ScrollReveal().reveal('.card4', { delay: 1400 });
+                 ScrollReveal().reveal('.card5', { delay: 1600 });
+                 ScrollReveal().reveal('.sc6', { delay: 2000 });
+
+
+                 ScrollReveal().reveal('.cc1', { delay: 800 });
+                 ScrollReveal().reveal('.cc2', { delay: 1000 });
+                 ScrollReveal().reveal('.titre-concert', { delay: 1200 });
+                 ScrollReveal().reveal('.co1', { delay: 2000 });
+                 ScrollReveal().reveal('.co2', { delay: 2500 });
+                 ScrollReveal().reveal('.co3', { delay: 3000 });
+            
+                </script>
+
+</body>
+</html>

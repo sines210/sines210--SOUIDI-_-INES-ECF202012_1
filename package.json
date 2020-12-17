@@ -1,0 +1,11 @@
+{
+  "name": "blog-skeud",
+  "version": "1.0.0",
+  "description": "examen_simplon",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "author": "is",
+  "license": "ISC"
+}

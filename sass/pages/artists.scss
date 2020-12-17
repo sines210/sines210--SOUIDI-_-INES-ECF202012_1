@@ -1,0 +1,77 @@
+
+//PAGES INDIVIDUELLES DES ARTISTES
+
+//max-height à 400vh pour faire rentrer les contenus trop longs même sur petits écrans 
+.article-artist
+{max-height: 400vh;
+}
+
+ //container cartes et encart concerts 
+.contain
+{display: flex;
+    justify-content: center;
+    padding-top: 8% ;
+}
+
+//carte photo 1
+.ca1
+{width: 80vh;
+height: 45vh;
+z-index: 7;}
+
+//carte photo 2
+.ca2
+{width: 60vh;
+height: 35vh;
+z-index: 9;
+margin-top: 17%;
+margin-left: -20%;}
+
+//liste des concerts
+    
+.liste-concert-artistes
+{
+margin-top: 10%;
+color: white;
+font-weight: bolder;
+letter-spacing: 1.2px;}
+h3
+{font-size: 2.3rem;}
+.conc
+{   list-style: none;
+    font-size: 1.7rem;
+    line-height: 35px;
+}
+
+//biographie
+.biographie
+{   font-weight: bolder;
+    display: grid;
+    place-items: center;
+    font-size: 1.6rem;
+    margin:5% 13%;}
+
+    //clip youtube
+.clip
+{display: grid;
+place-items: center;
+padding-bottom: 8%;}
+
+@media screen and (max-width:1026px)
+{
+    //redimensionnement des cartes photos redisposition au responsive
+    .ca1
+    {width: 30vh;
+    height: 25vh;
+    z-index: 7;}
+    
+    .ca2
+    {width: 35vh;
+    height: 15vh;
+    z-index: 9;
+    margin-left: 0;
+margin-top: -20%;}
+   .contain
+   {display: grid;
+place-items: center;}
+   }

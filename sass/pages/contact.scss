@@ -1,0 +1,54 @@
+
+
+//Ici je créé une banniere qui sera fixe au scroll en définissant une hauteur de banniere, puis en intégrant l'image comme background fixe 
+.article-banniere
+{
+    height: 60vh;
+    background:  fixed url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWlVCdNOeLOh64XNALJ4zQULYRNGdmNurbjA&usqp=CAU'); 
+}
+
+//Alignement formulaire 
+.article-form
+{   height: 70vh;
+    flex-direction: column;
+    justify-content: space-around;}
+
+.ligne1, .ligne2, .ligne3, .ligne4
+{display: flex;
+    align-items: center;
+justify-content: center;}
+
+//définition style des champs input
+.input-base
+{margin: 1%;
+border: none;
+border-bottom: 1px dashed #222222;
+background-color: transparent;}
+
+label
+{font-size: 1.3rem;
+font-weight: bolder;}
+
+
+:placeholder-shown
+{text-align: center;}
+
+.textArea
+{padding: 0 15%;}
+
+
+//style bouton submit avec transformation du bouton au clic
+.submit
+{padding: 1%;
+    color: #222222;
+background-color: rgb(7, 214, 221);
+font-size: 1.5rem;
+font-weight: bolder;
+transition: 0.5s ease;}
+
+.submit:active
+{transform: scale(1.1);
+background-color:#222222;
+color:  rgb(7, 214, 221);}
+  
+

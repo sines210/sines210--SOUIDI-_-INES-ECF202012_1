@@ -1,0 +1,22 @@
+
+//BOUTON LIEN PAGE ARTISTES
+
+.section-button
+{display: flex;
+    justify-content: center;
+}
+.biblio
+{font-size: 4rem;
+font-weight: 800;
+color:whitesmoke;
+background-color: black;
+cursor: pointer;
+}
+
+@media screen and (max-width:576px)
+{   
+
+    .biblio
+    {font-size: 2rem;}
+ 
+}

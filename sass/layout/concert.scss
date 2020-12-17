@@ -1,0 +1,52 @@
+//ARTICLE DES CONCERTS A VENIR SUR PAGE ACCUEIL (le style des rubriques concerts sur page artistes sont avec la page artistes) 
+
+#article-concerts
+{background: wheat;
+    height: 100vh;
+    justify-content: space-around;
+align-items: center;}
+
+.carte-concert
+{height: 50vh;
+width: 80vh;}
+
+//superposition des cartes avec image de concert et fond de couleur
+.cc1
+{background-color: red;
+position: relative;
+z-index: 7;}
+.cc3
+{ 
+position: relative;
+z-index: 9;
+margin-top: -35%;
+margin-left: 25%;
+}
+
+
+#liste-concert
+{ color: #222222;
+    font-weight: bolder;
+    letter-spacing: 1.2px;
+    font-size: 1.4rem;}
+//media queries de l'article concert page accueil
+@media screen and (max-width:1026px)
+{
+    .article-concerts
+    {justify-content: flex-start;}
+    .carte-concert
+    {height: 20vh;
+    width: 30vh;}
+}
+@media screen and (max-width:576px)
+{
+    .article-concerts
+    {justify-content: flex-start;}
+    .carte-concert
+    {
+    width: 28vh;}
+    .cc2
+    {margin-top: -40%;}
+    #liste-concert
+    {font-size: 1.2rem;}
+}

@@ -1,0 +1,85 @@
+//   // GRID 
+
+//Ceci était le début d'un layout de base en grid avant d'opter pour flex
+
+//   main
+//   {display: grid;
+//     grid-template-rows: repeat(10, 1fr);
+//     height: 100vh;
+
+// }// répartissement de la page de 100vh en 10 lignes de 10vh chacune
+
+//     header
+//     {    grid-row: 1/2;
+//     }//1 ligne
+//     #article-search
+//     {   display: grid;
+//        grid-row: 2/4;//de ligne 
+//       grid-template-columns: repeat(6,1fr);
+//       place-items: center;
+//     }// répartissement du bloc search en 6 colonnes égales et placement des blocs interne au centre de leur container
+
+//     #search-bar
+//     {grid-column: 3/5;
+//     }//search bar au centre de la colonne 3 à 5 - bloc responsiv - 
+
+//     #article-recents
+//     {    grid-row: 4/5;
+//       margin: 2% 0;
+//     }//1ligne de 4 à 5 en hauteur avec une marge de 2% en haut et en bas
+
+//     #article-cards
+//     { display: grid; 
+//       place-items: center;
+//       grid-template-columns: repeat(5,1fr);  
+//       grid-row: 5/9;
+//       grid-template-rows: repeat(2,1fr);
+//       row-gap: 5%;
+//       column-gap: 3%;
+//     }// ligne 5 à 9 de la page en hauteur placement des items au centre mise en place d'un grid interne réparti en 5 colonnes et 2 lignes égales grid-gap pour définir l'espace entre les lignes et colonnes
+
+//     .sc1, .sc2, .sc3, .sc4
+//     {grid-row: 1/2;
+//    }//les blocs cartes de 1 à 4 se positionneront sur la ligne 1 
+//     .sc5, .sc6
+//     {grid-row: 2/3;
+//   }//les blocs cartes 5 et 6 se positionneront sur la ligne 2 
+//     .sc1
+//     {
+//     grid-column: 1/2;}// bloc carte 1 colonne 1
+//     .sc2
+//     {
+//     grid-column: 2/3;}// bloc carte 2 colonne 2
+//     .sc3
+//     {
+//     grid-column: 3/4;}// bloc carte 3 colonne 3
+//     .sc4
+//     {
+//     grid-column: 4/5;}// bloc carte 4 colonne 4
+//     .sc5
+//     {
+//     grid-column: 1/2;}// bloc carte 5 colonne 1
+//     .sc6
+//     {
+//     grid-column: 2/3;}// bloc carte 6 colonne 2
+
+//     #article-icons
+//     { display: grid; 
+//       place-items: center;  
+//       grid-row: 9/10;
+//       grid-template-columns: repeat(6,1fr);
+//       margin: 7% 0 2% 0;
+//     }//ligne 9 du main mise en place d'un grid interne avec item placé au centre de leur container et répartissement de la ligne en 6colonnes ; marges haut et bas
+
+//     .i1
+//     {grid-column: 2/3;}//colonne 2 
+//     .i2
+//     {grid-column: 3/4;}//colonne 3
+//     .i3
+//     {grid-column: 4/5;}//colonne 4 
+//     .i4
+//     {grid-column: 5/6;}//colonne 5
+
+//     footer
+//     {grid-row: 10/11;
+//     }//ligne 10

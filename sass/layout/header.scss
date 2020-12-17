@@ -1,0 +1,145 @@
+
+//HEADER et NAVIGATION BURGER
+
+//LE header est positionné en sticky à la base haute de l'écran (top 0) avec un z-index à 60, ainsi au scroll le header restera fixe et sa visibilité sera au dessus des autres élément grâce au z-index à 60 plus haut que tous les autres éléments
+
+header {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  }
+  
+  //navbar
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+  }
+  
+   //Nom et logo(logo en unicode)
+  #head-name {
+    font-weight: 900;
+    color: white;
+    letter-spacing: 6px;
+    font-size: 2rem;
+    
+  }
+  
+  //liens-pages
+  .head-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    list-style: none;
+    font-size: 1.7rem;
+  }
+  
+  //redéfinition des attributs de liens par défaut
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .head-nav a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+  }
+  
+  //le menu burger ne sera visible qu'au format mobile et petite tablette
+  #menu-burger {
+    display: none;
+  }
+  
+  //Dessin du menu burger constitué de 3 lignes blanches et préparation de la transition au clic vers la croix de fermeture
+  #menu-burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.4s ease;
+  }
+  
+
+//media queries pour tablettes et mobiles 
+
+  @media screen and (max-width: 1024px) {
+   
+  .searchBar
+    {width: 25%;
+    border-radius: 10%;}}
+
+  @media screen and (max-width: 768px) {
+    
+    //le overflow-x hidden permettra de cacher tout ce qui sort de mon main et ainsi de ne pas voir la barre de navigation qui lorsqu'elle se renroulera ira sur le côté de l'écran
+    main{
+      overflow-x: hidden;}
+
+    #head-name
+    {font-size: 1.4rem;}
+
+    //on affiche le menu burger au format mobile et on transforme le curseur avec un pointer au survol de celui-ci
+    #menu-burger {
+      display: block;
+      cursor: pointer;
+    }
+ 
+    // barre de navigation latérale en absolute avec un z-index supérieur au éléments qu'il va survoler le right est à 0 pour qu'elle se déploie depuis la base droite de l'écran, height à 90vh pour qu'elle prenne le reste de la hauteur de l'écran disponible : la navbar du haut prenant déjà 10vh, on la fait partir de 6vh sous la base haute (top 6vh) afin de ne pas casser le flow de la transition du burger et de se garder un peu de marge.
+    //Ensuite on dispose les liens de navigation et on prépare la transition déroulement enroulement de la nav codée en js en positionnant la nav sur son axe X à 100% ce qui veut dire que de base elle est invisible puisque positionné à la base droite de l'écran (en réalité elle est sur le côté droit du main mais elle est cachée avec le overflow-X hidden).
+    .head-nav {
+      position: absolute;
+      z-index: 9;
+      right: 0;
+      height: 90vh;
+      top: 6vh;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      width: 30%;
+      transition: transform 0.5s ease-in;
+      transform: translateX(100%);
+    }
+
+    
+    //opacité de base des liens à 0 afin de pouvoir les faire apparaitre graduellement (codé en js) avec la keyframe links-fading
+    .head-nav li {
+      opacity: 0;
+      margin-right: 40%;
+    }
+  
+    //au clic sur le menu burger, la barre ne nav va se déployer de 100% et donc de sa base 0 à droite à 0% et donc dans son entiereté vers la gauche
+    .deploy {
+      transform: translateX(0%);
+    }
+    // EN CONSTRUCTION // Pour passer ma navbar responsive au scroll sur petit écrans il faut enlever le overflow du main, passer le head-nave opacité 0 (et 1 en deploy) ca marche sur écran réduit mais pas sur téléphone???
+    
+    @keyframes links-fading {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    }
+
+    // au clic (codé en js) mes 3 lignes du burger vont se transformer en croix : la deuxième disparaît et la première et la 3ème se transforment avec un effet de rotation à 45 degrès vers l'arriere pour l'une et vers l'avant pour la troisième le translate permet de garder la croix fixe sur son axe X et Y.
+    .toggle .line1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .toggle .line2 {
+      opacity: 0;
+    }
+  
+    .toggle .line3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+ 

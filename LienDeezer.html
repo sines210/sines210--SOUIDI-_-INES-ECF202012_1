@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+ 
+    <script type="text/javascript" src="https://cdns-files.dzcdn.net/js/min/dz-v00401349.js" defer="true"></script>
+</head>
+<body>
+<div id="dz-root"></div>
+<div id="player" style="width:100%;" align="center"></div>
+<br/>
+<p style="border:1px solid black; background-color: turquoise; width: 30%; text-align: center;">Cliquez sur l'album puis sur le bouton play du player</p>
+<div id="controlers">
+ 
+    <input type="button" class="play-album" style=" padding: 1% ; border-radius: 35%; margin: 2%; background-color: black; color: white" onclick="DZ.player.playAlbum(169306452); return false;" value="Play Wax Tailor - by any remixes necessary"/>
+    <input type="button" class="play-album" style=" padding: 1% ; border-radius: 35%; margin: 2%; background-color: black; color: white"  onclick="DZ.player.playAlbum(186276892); return false;" value="Play Gorillaz - Clint Eastwood"/>
+    <input type="button" class="play-album" style=" padding: 1% ; border-radius: 35%; margin: 2%; background-color: black; color: white"  onclick="DZ.player.playAlbum(68813711); return false;" value="Play Neneh Cherry - Broken Politics"/>
+    <input type="button" class="play-album" style=" padding: 1% ; border-radius: 35%; margin: 2%; background-color: black; color: white"  onclick="DZ.player.playAlbum(90875); return false;" value="Play Red Hot Chili Peppers - Californication"/>
+    <input type="button" class="play-album" style=" padding: 1% ; border-radius: 35%; margin: 2%; background-color: black; color: white"  onclick="DZ.player.playAlbum(936365); return false;" value="Play Metronomy - The English Riviera"/>
+    <input type="button" class="play-album" style=" padding: 1% ; border-radius: 35%; margin: 2%; background-color: black; color: white"  onclick="DZ.player.playAlbum(454050); return false;" value="Play Jimi Hendrix - Experience Hendrix : The best of of Jimi Hendrix"/>
+    <input type="button" class="play-album" style=" padding: 1% ; border-radius: 35%; margin: 2%; background-color: black; color: white"  onclick="DZ.player.playAlbum(1397067); return false;" value="Play Popof - Wax Machine"/>
+    <input type="button" class="play-album" style=" padding: 1% ; border-radius: 35%; margin: 2%; background-color: black; color: white"  onclick="DZ.player.playAlbum(7034647); return false;" value="Play Manu Chao - Clandestino"/>
+    <input type="button" class="play-album" style=" padding: 1% ; border-radius: 35%; margin: 2%; background-color: black; color: white"  onclick="DZ.player.playAlbum(104777162); return false;" value="Play Chinese Man - Racing with the sun"/>
+    <input type="button" class="play-album" style=" padding: 1% ; border-radius: 35%; margin: 2%; background-color: black; color: white"  onclick="DZ.player.playAlbum(93456832); return false;" value="Play Africa Express - Egoli"/>
+
+  
+</div>
+
+<script>
+    $(document).ready(function(){
+        $("#controlers input").attr('disabled', true);
+        $("#slider_seek").click(function(evt,arg){
+            var left = evt.offsetX;
+            DZ.player.seek((evt.offsetX/$(this).width()) * 100);
+        });
+    });
+    function event_listener_append() {
+        var pre = document.getElementById('event_listener');
+        var line = [];
+        for (var i = 0; i < arguments.length; i++) {
+            line.push(arguments[i]);
+        }
+        pre.innerHTML += line.join(' ') + "\n";
+    }
+    function onPlayerLoaded() {
+        $("#controlers input").attr('disabled', false);
+        event_listener_append('player_loaded');
+        DZ.Event.subscribe('current_track', function(arg){
+            event_listener_append('current_track', arg.index, arg.track.title, arg.track.album.title);
+        });
+        DZ.Event.subscribe('player_position', function(arg){
+            event_listener_append('position', arg[0], arg[1]);
+            $("#slider_seek").find('.bar').css('width', (100*arg[0]/arg[1]) + '%');
+        });
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        DZ.init({
+            appId  : '8',
+            channelUrl : 'https://developers.deezer.com/examples/channel.php',
+            player : {
+                container : 'player',
+                playlist : true,
+                width : 650,
+                height : 300,
+                onload : onPlayerLoaded
+            }
+        });
+    });
+</script><br/>
+
+</body>
+</html>

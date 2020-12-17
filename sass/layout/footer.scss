@@ -1,0 +1,22 @@
+// FOOTER deux blocs de listes pour le style affichés en deux colonnes et centrés dans leurs containers, les éléments de la liste étant des liens, on leur enlève leur couleur, soulignement et puces attribués par défaut au format liste
+
+footer
+{background-color: black;
+height: 40vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.li-foot
+{   
+list-style: none;
+font-size: 1.6rem;
+padding: 2%;}
+
+.aF
+{text-decoration: none;
+    color: white;}
+
+

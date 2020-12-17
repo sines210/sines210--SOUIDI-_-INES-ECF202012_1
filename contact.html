@@ -1,0 +1,120 @@
+<!Doctype html>
+<html lang="Fr">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="description" content="MyMusic - le blog musical qui recensent les artistes favoris de l'utilisateur ainsi que des clips, biographies et dates de concert ">
+    <meta name="robots" content="nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.1, viewport-fit=cover">
+   
+ 
+    <!-- lien google-fonts pour ma font-family -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <title> MyMusic - Le blog de votre musique </title>
+
+  <!-- Essai de respecter au max les bonnes pratiques dans le header avec indication de la langue, encodage en utf-8, balise meta description qui sera le snippet, la description du site qui apparaitra sous son nom lorsque l'on recherchera le site dans un moteur de recherche. La balise meta robots no follow permettra une meilleure optimisation du site puisque les liens ne seront pas tous à jour au moment du livrable. Ainsi les robots d'indexation auront pour instruction de ne pas suivre les liens et ainsi on évitera un mauvais référencement du fait de la non fonctionnalité de certains liens. La balise viewPort aide est là pour aider au responsive puisqu'elle indique que les proportions de l'écran de base doivent rester les mêmes entre le format destop et le format mobile -->
+</head>
+
+
+<body>
+    <main>
+        <div class="div-global">  
+            <header>
+    
+                 <nav class="nav">
+                     <div id="head-name"><a href="index.html" class="lien">	&#127911;MY MUSIC&#xAE;</a></div>
+                     <input type="search" class="searchBar" placeholder="&#8981; search"/>
+                     <div id="menu-burger">
+                         <div class="line1"></div>
+                         <div class="line2"></div>
+                         <div class="line3"></div>
+                     </div>
+                         <ul class="head-nav">
+                             <li>  <a href="index.html" class="lien">Accueil</a></li>
+                             <li>  <a href="artistes.html" class="lien">Artistes</a></li>
+                             <li>  <a href="contact.html" class="lien">Contact</a></li>
+                     </ul>
+                 </nav>   
+             </header>
+
+            <article class="article-banniere">     </article>
+            <article class="article-form">
+                <div class="ligne1 ">
+                    <label for="nom">Nom</label> : <input type="text" name="last name" class="input-base c-desk1 c-mob1 c-tab1" autofocus required/>
+                    <label for="prénom">Prénom</label> : <input type="text" name="prénom" class="input-base c-desk1 c-mob1 c-tab1" required />
+            </div>
+                <div class="ligne2">
+                    <label for= "email">Adresse email : </label> <input type="email" class="input-base c-desk1 c-mob1 c-tab1" required/>
+                    <label for= "phone">Téléphone : </label><input type="tel" class="tel input-base c-desk1 c-mob1 c-tab1" />
+                </div>
+                <div class="ligne3"><textarea name="texte-area" placeholder="Ecrivez votre message ici" class="textArea c-desk1 c-mob1 c-tab1" rows="5"></textarea></div>
+
+                <div class="ligne4"><input type="submit" class="submit c-desk1 c-mob1 c-tab1" value="Envoyer" /></div>
+
+        </article>
+        <article class="article-icons">
+            <section class="music-icon i1 c-desk1">
+              <a href="https://www.deezer.com/fr/" class="butt">  <img src="./img/deezer90.png" alt="logo deezer"></a>
+            </section>
+            <section class="music-icon i2 c-desk1">
+                <a href="https://www.spotify.com/fr/" class="butt"><img src="./img/spotify90.png" alt="logo Spotify"></a>
+            </section>
+            <section class="music-icon i3 c-desk1">
+              <a href="https://musicbrainz.org/" class="butt" > <img src="./img/musicBrainz50.png" alt="logo musicBrainz"></a> 
+            </section>
+            <section class="music-icon i4 c-desk1">
+                <a href="https://tunein.com/" class="butt" ><img src="./img/tuneIn60.png" alt="logo TuneIn"></a>
+            </section>
+        </article>
+
+            
+     
+        <footer>
+            <div class="c-desk2"></div>
+            <ul class="foot-nav c-desk2 ">
+                <li class="li-foot">  <a href="#" class="aF lien">A propos</a></li>
+                <li class="li-foot">  <a href="#" class="aF lien">Liens</a></li>
+                <li class="li-foot ">  <a href="#" class="aF lien">Partenaires</a></li>
+               
+            </ul>
+            <ul class="foot-nav1 c-desk2 "> 
+                <li class="li-foot ">  <a href="#" class="aF lien">Support</a></li>
+                <li class="li-foot">  <a href="contact.html" class="aF lien">Contact</a></li>
+            </ul>
+        </footer>  
+    </div>
+</main>
+    <script src="./assets/appIndex.js"></script>
+    <!-- <script src="https://e-cdns-files.dzcdn.net/js/min/dz.js"></script> SCRIPT PROTOCOLE HTTPS -->
+<script src="https://cdns-files.dzcdn.net/js/min/dz.js"></script>
+
+
+<script>
+    //Scroll reveal
+scrollFunction()
+
+ScrollReveal().reveal('header');
+               
+                // ScrollReveal().reveal('#top-left', { delay: 500 });
+                
+                 ScrollReveal().reveal('.card1', { delay: 800 });
+                 ScrollReveal().reveal('.card2', { delay: 1000 });
+                 ScrollReveal().reveal('.card3', { delay: 1200 });
+                 ScrollReveal().reveal('.card4', { delay: 1400 });
+                 ScrollReveal().reveal('.card5', { delay: 1600 });
+                 ScrollReveal().reveal('.sc6', { delay: 2000 });
+
+
+                 ScrollReveal().reveal('.cc1', { delay: 800 });
+                 ScrollReveal().reveal('.cc2', { delay: 1000 });
+                 ScrollReveal().reveal('.titre-concert', { delay: 1200 });
+                 ScrollReveal().reveal('.co1', { delay: 2000 });
+                 ScrollReveal().reveal('.co2', { delay: 2500 });
+                 ScrollReveal().reveal('.co3', { delay: 3000 });
+            
+                </script>
+
+</body>
+</html>
